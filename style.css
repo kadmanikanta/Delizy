@@ -90,9 +90,14 @@ body{
 /* Logo Styles */
 .logo {
     max-width: 100px; /* Adjust maximum width of the logo */
-    height:19.33px; /* Maintain aspect ratio */
-    
+    height: 30px; /* Maintain aspect ratio */
 }
+
+header.logo img{
+border: 3px solid #088178;
+border-radius: 6px;
+}
+    
 
 #navbar{
     display: flex;
@@ -340,7 +345,7 @@ body{
 
 
 
-#sm-banner .banner-box{
+#sm-banner .banner-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -511,6 +516,85 @@ body{
 
 
 
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+footer  .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+
+
+footer.logo{
+    margin-bottom: 30px
+}
+
+footer h3{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom:10px ;
+}
+
+
+footer .follow{
+    margin-top: 20px;
+
+}
+
+
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+
+}
+
+
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+
+
+footer .install img{
+    margin: 10px 0 15px 0;
+
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
 /* shop page*/
 
 
@@ -520,4 +604,32 @@ body{
 
 /* about page*/
 
+
+
+/*cart page */
+
+/*start media query */
+
+
+
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+         flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vh;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+    }
+    
+    #navbar li{
+
+    }
+}
 
